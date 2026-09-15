@@ -39,7 +39,7 @@ Type check: `npx next typegen && npx tsc --noEmit`
 
 | Variable | Purpose | Default |
 |---|---|---|
-| `CONTACT_EMAIL` | Email shown in hero, contact section, and JSON-LD. Leave empty to use the default. | `stacie.harlene@gmail.com` |
+| `NEXT_PUBLIC_CONTACT_EMAIL` | Email shown in hero, contact section, and JSON-LD. Leave empty to use the default. | `stacie.harlene@gmail.com` |
 | `NEXT_PUBLIC_SITE_URL` | Absolute site URL for canonical links, sitemap, robots, Open Graph. Must be set in the build environment before `npm run build` (inlined at build time); otherwise all absolute URLs point to localhost. | `http://localhost:3000` |
 
 ## Editing content
