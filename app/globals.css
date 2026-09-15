@@ -1,26 +1,119 @@
 @import "tailwindcss";
 
+/* Only the theme toggle icons use dark:. Colors come from the tokens below. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Light: Hanami */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --bg: #fff7f9;
+  --surface: #ffffff;
+  --surface-soft: #fce8ee;
+  --border: #f3d3dd;
+  --text: #3b1f2b;
+  --muted: #7a5563;
+  --accent: #b03060;
+  --accent-contrast: #ffffff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Dark: Yozakura (explicit choice) */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #1c1418;
+  --surface: #261b21;
+  --surface-soft: #2f2129;
+  --border: #3d2c35;
+  --text: #fbeff3;
+  --muted: #c9a9b6;
+  --accent: #f7b2c4;
+  --accent-contrast: #2a1620;
 }
 
+/* Dark: Yozakura (no script ran, system prefers dark) */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --bg: #1c1418;
+    --surface: #261b21;
+    --surface-soft: #2f2129;
+    --border: #3d2c35;
+    --text: #fbeff3;
+    --muted: #c9a9b6;
+    --accent: #f7b2c4;
+    --accent-contrast: #2a1620;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-contrast: var(--accent-contrast);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+  --font-display: var(--font-shippori), ui-serif, Georgia, serif;
+}
+
+@theme {
+  --color-sakura: #f4a7b9;
+}
+
+@layer base {
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+  }
+
+  html {
+    scroll-padding-top: 5rem;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  ::selection {
+    background-color: var(--color-sakura);
+    color: #3b1f2b;
+  }
+}
+
+@keyframes petal-fall {
+  0% {
+    transform: translate3d(0, -140px, 0) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate3d(var(--petal-drift, 40px), 420px, 0) rotate(300deg);
+    opacity: 0;
+  }
+}
+
+/* Petals stay static when the user prefers reduced motion. Duration and delay come from inline styles. */
+@media (prefers-reduced-motion: no-preference) {
+  .petal {
+    animation-name: petal-fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
 }
