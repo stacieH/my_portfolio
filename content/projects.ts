@@ -22,28 +22,33 @@ export const projects: Project[] = [
       height: 900,
     },
     github: "https://github.com/stacieH/widgets/tree/login-widget",
+    liveUrl: "https://widgets-git-login-widget-staciehs-projects.vercel.app",
   },
-  // {
-  //   slug: "food-catalog",
-  //   title: "Food Catalog",
-  //   summary:
-  //     "A food-ordering catalog app to browse dishes from multiple restaurants, filter, sort, and search the menu, save favourites, manage a persistent cart, and complete checkout.",
-  //   stack: ["Next.js", "React", "TypeScript", "Jest"],
-  //   features: [
-  //     "Browse dishes from multiple restaurants",
-  //     "Filter, sort, and search the menu",
-  //     "Save favourites",
-  //     "Persistent cart",
-  //     "Checkout flow",
-  //   ],
-  //   image: {
-  //     src: "/projects/food-catalog.png",
-  //     alt: "Food Catalog app UI screenshot",
-  //     width: 1440,
-  //     height: 1000,
-  //   },
-  //   github: "https://github.com/stacieH/food/tree/redesign",
-  // },
+  {
+    slug: "cinder-and-salt",
+    title: "Cinder & Salt",
+    summary:
+      "A restaurant website and online ordering portal: a one-page site with scroll-driven motion, plus pickup and delivery ordering, checkout, order tracking, and customer accounts running on demo data.",
+    stack: ["Next.js", "React", "TypeScript", "TanStack Query", "Playwright"],
+    features: [
+      "One-page restaurant site with GSAP scroll animations and smooth scrolling",
+      "Full menu with sticky course navigation, gallery lightbox, and a Google Maps venue pin",
+      "Pickup or delivery ordering with dish options and a cart with live price quotes",
+      "Checkout with scheduled time slots, per-field validation, and a demo payment page",
+      "Order tracking with a status timeline and guest cancellation",
+      "Customer accounts: registration, email verification, address book, and order history",
+      "Demo console with an email outbox and failure scenarios",
+      "Unit tests with Jest and end-to-end tests with Playwright",
+    ],
+    image: {
+      src: "/projects/cinder-and-salt.png",
+      alt: "Cinder & Salt restaurant site UI screenshot",
+      width: 1440,
+      height: 1000,
+    },
+    github: "https://github.com/stacieH/ecom_web/tree/restaurant-site",
+    liveUrl: "https://cinder-salt-ecom.vercel.app",
+  },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {

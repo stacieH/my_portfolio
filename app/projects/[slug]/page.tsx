@@ -4,8 +4,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/container";
 import { ExternalLink } from "@/components/ui/external-link";
-import { ArrowLeftIcon, ArrowRightIcon, BlossomIcon, GitHubIcon } from "@/components/ui/icons";
-import { buttonPrimary, card } from "@/components/ui/styles";
+import { ArrowLeftIcon, ArrowRightIcon, ArrowUpRightIcon, BlossomIcon, GitHubIcon } from "@/components/ui/icons";
+import { buttonPrimary, buttonSecondary, card } from "@/components/ui/styles";
 import { Tag } from "@/components/ui/tag";
 import { getAdjacentProjects, getProjectBySlug, projects } from "@/content/projects";
 
@@ -69,8 +69,14 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
               </li>
             ))}
           </ul>
-          <div className="mt-8">
-            <ExternalLink href={project.github} className={buttonPrimary}>
+          <div className="mt-8 flex flex-wrap gap-3">
+            {project.liveUrl ? (
+              <ExternalLink href={project.liveUrl} className={buttonPrimary}>
+                <ArrowUpRightIcon className="h-4 w-4" />
+                Visit live site
+              </ExternalLink>
+            ) : null}
+            <ExternalLink href={project.github} className={project.liveUrl ? buttonSecondary : buttonPrimary}>
               <GitHubIcon className="h-4 w-4" />
               View on GitHub
             </ExternalLink>
@@ -78,15 +84,38 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
         </header>
 
         <div className="mt-12 overflow-hidden rounded-2xl border border-border bg-surface-soft shadow-[0_30px_60px_-30px_rgba(176,48,96,0.35)]">
-          <Image
-            src={project.image.src}
-            alt={project.image.alt}
-            width={project.image.width}
-            height={project.image.height}
-            preload
-            sizes="(min-width: 1152px) 1104px, 100vw"
-            className="h-auto w-full"
-          />
+          {project.liveUrl ? (
+            <>
+              <div className="flex items-center gap-3 border-b border-border bg-surface px-4 py-2.5">
+                <span aria-hidden="true" className="flex gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-full bg-sakura" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-border" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-border" />
+                </span>
+                <span className="truncate font-mono text-xs text-muted">{new URL(project.liveUrl).host}</span>
+              </div>
+              {/* Phones get a tall viewport so the embedded site stays usable; wider screens use a 16:10 frame. */}
+              <div className="relative h-[70vh] min-h-[28rem] sm:aspect-[16/10] sm:h-auto sm:min-h-0">
+                <iframe
+                  src={project.liveUrl}
+                  title={`Live preview of ${project.title}`}
+                  sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  className="absolute inset-0 h-full w-full bg-surface"
+                />
+              </div>
+            </>
+          ) : (
+            <Image
+              src={project.image.src}
+              alt={project.image.alt}
+              width={project.image.width}
+              height={project.image.height}
+              preload
+              sizes="(min-width: 1152px) 1104px, 100vw"
+              className="h-auto w-full"
+            />
+          )}
         </div>
 
         <section aria-labelledby="features-title" className="mt-16 max-w-3xl">

@@ -60,6 +60,7 @@ Notes:
 - **Experience:** an entry with an empty `bullets` array shows only its role, company, and dates.
 - **Work cards:** a card with an empty `stack` array shows no technology tags.
 - **Projects:** add an entry to `content/projects.ts` and put its screenshot in `public/projects/`. The detail page, Open Graph image, and sitemap entry are generated automatically.
+- **Live preview:** set a project's optional `liveUrl` to embed the deployed site on its detail page (with a "Visit live site" button). Without `liveUrl`, the detail page shows the screenshot. The home page card always uses the screenshot. The deployed site must allow being embedded: an `X-Frame-Options: DENY` or `SAMEORIGIN` header, or a `Content-Security-Policy: frame-ancestors` rule that excludes this site, blocks the preview.
 
 ## Theme
 
@@ -69,7 +70,7 @@ The falling sakura petals in the hero are currently turned off. The component is
 
 ## Deployment
 
-1. Set `NEXT_PUBLIC_SITE_URL` (and optionally `CONTACT_EMAIL`) in the hosting provider's build environment.
+1. Set `NEXT_PUBLIC_SITE_URL` (and optionally `NEXT_PUBLIC_CONTACT_EMAIL`) in the hosting provider's build environment.
 2. Make sure `public/profile.jpg` and `public/projects/*.png` are committed; the hero, project pages, and the root Open Graph image need them.
 3. Run `npm run build`. The output lists every route as static (○) or SSG (●).
 

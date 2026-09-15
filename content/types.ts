@@ -51,6 +51,8 @@ export type Project = {
   features: string[];
   image: { src: string; alt: string; width: number; height: number };
   github: string;
+  /** Deployed site. When set, the detail page embeds it instead of showing the screenshot. */
+  liveUrl?: string;
 };
 
 export type Course = {
