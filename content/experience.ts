@@ -7,12 +7,12 @@ export const experience: Experience[] = [
     role: "FE Developer / FE Team Lead",
     period: "Apr 2021 – Present",
     bullets: [
-      "Led and guided frontend development efforts, providing technical leadership, mentorship, and support to team members.",
-      "Delivered and maintained web and mobile apps: admin portals, e-commerce and business apps, school systems, and mobile solutions.",
-      "Worked with backend developers, business analysts, architects, and cross-functional teams throughout the development lifecycle.",
+      "Led the front-end team through coaching, code reviews, and shared coding standards",
+      "Contributed, delivered and maintained web and mobile apps: admin portals, e-commerce and business apps, school systems, and mobile solutions.",
+      "Collaborated with backend developers, business analysts, and architects across the software development lifecycle (SDLC).",
       "Built reusable components and packages shared across applications.",
       "Developed features, integrated APIs and payment functionality, resolved bugs, maintained existing applications, and supported releases.",
-      "Contributed to admin portals, e-commerce and business applications, school-related systems, and mobile solutions.",
+      "Utilized AI-assisted development tools to accelerate feature implementation, debugging, and issue resolution while gaining practical exposure to backend development and contributing to broader full-stack development capabilities.",
     ],
   },
   {
