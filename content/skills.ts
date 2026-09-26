@@ -19,7 +19,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: "Backend & Data",
-    items: ["Node.js", "Express.js", "MySQL", "MongoDB Compass/Atlas", "PHP"],
+    items: ["Node.js", "Express.js", "MySQL", "MongoDB Compass", "PHP"],
   },
   {
     title: "Testing",
