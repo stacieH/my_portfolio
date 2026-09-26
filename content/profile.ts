@@ -3,7 +3,7 @@ import type { Profile } from "./types";
 export const profile: Profile = {
   name: "Harlene T. Jaramillos",
   shortName: "Harlene Jaramillos",
-  title: "Front-End Developer | FE Team Lead | React Developer | Software Engineer",
+  title: "Front-End Developer | FE Team Lead | Software Engineer",
   summary:
     "Front-End Developer and Team Lead with 7+ years of IT experience building scalable web and mobile applications. Experienced with Next.js, React, React Native, Redux, TypeScript, JavaScript, and Material UI.",
   location: "Calamba City, Laguna, Philippines",
