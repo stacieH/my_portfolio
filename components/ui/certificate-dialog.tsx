@@ -2,15 +2,16 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ExternalLink } from "@/components/ui/external-link";
-import { CertificateIcon, CloseIcon } from "@/components/ui/icons";
+import { CertificateIcon, CloseIcon, LinkedInIcon } from "@/components/ui/icons";
 import { certificatePreviewUrl } from "@/lib/certificates";
 
 type CertificateDialogProps = {
   title: string;
   url: string;
+  linkedinUrl?: string;
 };
 
-export function CertificateDialog({ title, url }: CertificateDialogProps) {
+export function CertificateDialog({ title, url, linkedinUrl }: CertificateDialogProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [open, setOpen] = useState(false);
 
@@ -45,7 +46,8 @@ export function CertificateDialog({ title, url }: CertificateDialogProps) {
           // Clicks land on the dialog itself only when they hit the backdrop.
           if (event.target === dialogRef.current) dialogRef.current?.close();
         }}
-        className="max-h-[92vh] w-[min(64rem,92vw)] overflow-hidden rounded-2xl border border-border bg-surface p-0 text-text backdrop:bg-black/60"
+        // m-auto restores the centering that the CSS reset's `margin: 0` removes.
+        className="m-auto max-h-[92vh] w-[min(64rem,92vw)] overflow-hidden rounded-2xl border border-border bg-surface p-0 text-text backdrop:bg-black/60"
       >
         <div className="flex items-center justify-between gap-4 border-b border-border px-5 py-3">
           <h2 className="font-display text-base font-bold text-text">{title}</h2>
@@ -66,7 +68,16 @@ export function CertificateDialog({ title, url }: CertificateDialogProps) {
             className="block h-[70vh] w-full bg-surface-soft"
           />
         ) : null}
-        <div className="border-t border-border px-5 py-3 text-right">
+        <div className="flex flex-wrap items-center justify-end gap-x-5 gap-y-2 border-t border-border px-5 py-3">
+          {linkedinUrl ? (
+            <ExternalLink
+              href={linkedinUrl}
+              className="inline-flex items-center gap-1.5 font-mono text-xs text-accent hover:underline"
+            >
+              <LinkedInIcon className="h-3.5 w-3.5" />
+              Open in LinkedIn
+            </ExternalLink>
+          ) : null}
           <ExternalLink href={url} className="font-mono text-xs text-accent hover:underline">
             Open in a new tab
           </ExternalLink>

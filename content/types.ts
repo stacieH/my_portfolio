@@ -60,6 +60,8 @@ export type Course = {
   date: string;
   /** Link to the certificate. Shown as a "View certificate" button that opens a modal. */
   certificateUrl?: string;
+  /** Public LinkedIn certificate page, shown beside the file link. */
+  linkedinUrl?: string;
 };
 
 export type LearningPath = {
@@ -68,6 +70,8 @@ export type LearningPath = {
   date: string;
   courses: Course[];
   certificateUrl?: string;
+  /** Public LinkedIn certificate page, shown beside the file link. */
+  linkedinUrl?: string;
 };
 
 export type Certification = {
@@ -75,4 +79,6 @@ export type Certification = {
   issuer: string;
   date: string;
   certificateUrl?: string;
+  /** Public LinkedIn certificate page, shown beside the file link. */
+  linkedinUrl?: string;
 };

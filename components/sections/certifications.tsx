@@ -25,7 +25,7 @@ export function Certifications() {
               <p className="mt-1 text-sm text-accent">{path.provider}</p>
               {path.certificateUrl ? (
                 <div className="mt-3">
-                  <CertificateDialog title={path.title} url={path.certificateUrl} />
+                  <CertificateDialog title={path.title} url={path.certificateUrl} linkedinUrl={path.linkedinUrl} />
                 </div>
               ) : null}
               <ul className="mt-4 space-y-3 border-t border-border pt-4">
@@ -37,7 +37,11 @@ export function Certifications() {
                     </div>
                     {course.certificateUrl ? (
                       <div className="mt-2">
-                        <CertificateDialog title={course.title} url={course.certificateUrl} />
+                        <CertificateDialog
+                          title={course.title}
+                          url={course.certificateUrl}
+                          linkedinUrl={course.linkedinUrl}
+                        />
                       </div>
                     ) : null}
                   </li>
@@ -56,7 +60,11 @@ export function Certifications() {
                 <p className="mt-1 font-mono text-xs text-muted">{certification.date}</p>
                 {certification.certificateUrl ? (
                   <div className="mt-3">
-                    <CertificateDialog title={certification.title} url={certification.certificateUrl} />
+                    <CertificateDialog
+                      title={certification.title}
+                      url={certification.certificateUrl}
+                      linkedinUrl={certification.linkedinUrl}
+                    />
                   </div>
                 ) : null}
               </li>
@@ -70,7 +78,11 @@ export function Certifications() {
                 <span className="font-mono text-xs text-muted">{course.date}</span>
                 {course.certificateUrl ? (
                   <div className="mt-2">
-                    <CertificateDialog title={course.title} url={course.certificateUrl} />
+                        <CertificateDialog
+                          title={course.title}
+                          url={course.certificateUrl}
+                          linkedinUrl={course.linkedinUrl}
+                        />
                   </div>
                 ) : null}
               </li>
