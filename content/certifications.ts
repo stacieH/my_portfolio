@@ -31,6 +31,7 @@ export const certifications: Certification[] = [
 ];
 
 export const courses: Course[] = [
+  { title: "Docker for Developers", date: "Sep 29, 2026" },
   { title: "Mastering Nest.js: Build Scalable Applications with Mastery in Nest.js Framework", date: "Sep 27, 2026" },
   { title: "Programming Foundations: Secure Coding (2018)", date: "Jul 23, 2025" },
   { title: "Building RESTful APIs with Node.js and Express", date: "Nov 08, 2021" },
