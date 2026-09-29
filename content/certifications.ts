@@ -36,7 +36,7 @@ export const courses: Course[] = [
     date: "Sep 29, 2026",
     certificateUrl: "https://drive.google.com/file/d/1r-2iA8NtfA8CUNGRPSpq7Q5eeS94VOHr/view?usp=drivesdk",
     linkedinUrl:
-      "https://www.linkedin.com/learning/certificates/984aefe7113abbf5e295f8ac8b67692cca5c1312d621d669a5a3531167bd68fe03",
+      "https://www.linkedin.com/learning/certificates/64d123401afd05964522d9548015e98cb3a62ed17f5ed3d98b6bab6b7fd5798e",
   },
   { title: "Mastering Nest.js: Build Scalable Applications with Mastery in Nest.js Framework", date: "Sep 27, 2026" },
   { title: "Programming Foundations: Secure Coding (2018)", date: "Jul 23, 2025" },
