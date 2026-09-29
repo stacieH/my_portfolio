@@ -204,3 +204,12 @@ export function BlossomIcon(props: IconProps) {
     </svg>
   );
 }
+
+export function CertificateIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <circle cx="12" cy="9" r="5" />
+      <path d="M8.5 13.2L7 22l5-2.6 5 2.6-1.5-8.8" />
+    </Icon>
+  );
+}

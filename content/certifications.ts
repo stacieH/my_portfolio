@@ -31,7 +31,11 @@ export const certifications: Certification[] = [
 ];
 
 export const courses: Course[] = [
-  { title: "Docker for Developers", date: "Sep 29, 2026" },
+  {
+    title: "Docker for Developers",
+    date: "Sep 29, 2026",
+    certificateUrl: "https://drive.google.com/file/d/1r-2iA8NtfA8CUNGRPSpq7Q5eeS94VOHr/view?usp=drivesdk",
+  },
   { title: "Mastering Nest.js: Build Scalable Applications with Mastery in Nest.js Framework", date: "Sep 27, 2026" },
   { title: "Programming Foundations: Secure Coding (2018)", date: "Jul 23, 2025" },
  { title: "Agile Software Development", date: "Oct 30, 2024" },

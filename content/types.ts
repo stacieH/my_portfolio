@@ -58,6 +58,8 @@ export type Project = {
 export type Course = {
   title: string;
   date: string;
+  /** Link to the certificate. Shown as a "View certificate" button that opens a modal. */
+  certificateUrl?: string;
 };
 
 export type LearningPath = {
@@ -65,10 +67,12 @@ export type LearningPath = {
   provider: string;
   date: string;
   courses: Course[];
+  certificateUrl?: string;
 };
 
 export type Certification = {
   title: string;
   issuer: string;
   date: string;
+  certificateUrl?: string;
 };

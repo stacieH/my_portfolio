@@ -1,3 +1,4 @@
+import { CertificateDialog } from "@/components/ui/certificate-dialog";
 import { Section } from "@/components/ui/section";
 import { card } from "@/components/ui/styles";
 import { certifications, courses, learningPaths } from "@/content/certifications";
@@ -22,11 +23,23 @@ export function Certifications() {
                 <p className="font-mono text-xs text-muted">{path.date}</p>
               </div>
               <p className="mt-1 text-sm text-accent">{path.provider}</p>
-              <ul className="mt-4 space-y-2 border-t border-border pt-4">
+              {path.certificateUrl ? (
+                <div className="mt-3">
+                  <CertificateDialog title={path.title} url={path.certificateUrl} />
+                </div>
+              ) : null}
+              <ul className="mt-4 space-y-3 border-t border-border pt-4">
                 {path.courses.map((course) => (
-                  <li key={course.title} className="flex flex-wrap justify-between gap-x-4 gap-y-1 text-sm">
-                    <span className="text-text">{course.title}</span>
-                    <span className="font-mono text-xs text-muted">{course.date}</span>
+                  <li key={course.title} className="text-sm">
+                    <div className="flex flex-wrap justify-between gap-x-4 gap-y-1">
+                      <span className="text-text">{course.title}</span>
+                      <span className="font-mono text-xs text-muted">{course.date}</span>
+                    </div>
+                    {course.certificateUrl ? (
+                      <div className="mt-2">
+                        <CertificateDialog title={course.title} url={course.certificateUrl} />
+                      </div>
+                    ) : null}
                   </li>
                 ))}
               </ul>
@@ -41,6 +54,11 @@ export function Certifications() {
                 <p className="font-semibold text-text">{certification.title}</p>
                 <p className="mt-1 text-sm text-accent">{certification.issuer}</p>
                 <p className="mt-1 font-mono text-xs text-muted">{certification.date}</p>
+                {certification.certificateUrl ? (
+                  <div className="mt-3">
+                    <CertificateDialog title={certification.title} url={certification.certificateUrl} />
+                  </div>
+                ) : null}
               </li>
             ))}
           </ul>
@@ -50,6 +68,11 @@ export function Certifications() {
               <li key={course.title} className="flex flex-col gap-1 px-5 py-3">
                 <span className="text-sm text-text">{course.title}</span>
                 <span className="font-mono text-xs text-muted">{course.date}</span>
+                {course.certificateUrl ? (
+                  <div className="mt-2">
+                    <CertificateDialog title={course.title} url={course.certificateUrl} />
+                  </div>
+                ) : null}
               </li>
             ))}
           </ul>
