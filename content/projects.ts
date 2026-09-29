@@ -49,6 +49,31 @@ export const projects: Project[] = [
     github: "https://github.com/stacieH/ecom_web/tree/restaurant-site",
     liveUrl: "https://cinder-salt-ecom.vercel.app",
   },
+  {
+    slug: "stepwise",
+    title: "Stepwise",
+    summary:
+      "A gamified language course: English from A1 to C2 and Japanese from N5 to N1, with lessons, five exercise types, level tests, flashcards, handwriting practice, and progress saved in the browser.",
+    stack: ["React", "React Router", "MUI", "Vite", "JavaScript"],
+    features: [
+      "English A1 to C2 (48 lessons) and Japanese N5 to N1 (40 lessons)",
+      "Lessons with grammar notes, audio examples, vocabulary, and five exercise types",
+      "Level tests that unlock the next level at 80%",
+      "Flashcards, mistake review, and mixed practice sessions",
+      "Handwriting practice for kana and kanji: study, trace, write from memory, quiz",
+      "Searchable lesson library and word bank, with filters kept in the URL",
+      "XP, streaks, daily goals, and separate progress per course, stored in the browser",
+      "Light and dark themes, lazy-loaded pages, and hash routing for static hosting",
+    ],
+    image: {
+      src: "/projects/stepwise.png",
+      alt: "Stepwise language course UI screenshot",
+      width: 1440,
+      height: 1000,
+    },
+    github: "https://github.com/stacieH/Stepwise/tree/main",
+    liveUrl: "https://stepwise-liart-ten.vercel.app",
+  },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
