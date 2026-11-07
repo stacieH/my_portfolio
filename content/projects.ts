@@ -46,7 +46,7 @@ export const projects: Project[] = [
       width: 1440,
       height: 1000,
     },
-    github: "https://github.com/stacieH/ecom_web/tree/restaurant-site",
+    github: "https://github.com/stacieH/cinder-and-salt",
     liveUrl: "https://cinder-salt-ecom.vercel.app",
   },
   {
