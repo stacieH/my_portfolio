@@ -2,6 +2,27 @@ import type { Certification, Course, LearningPath } from "./types";
 
 export const learningPaths: LearningPath[] = [
   {
+    title: "Become a Full-Stack Web Developer",
+    provider: "LinkedIn Learning",
+    date: "October 15, 2026",
+    courses: [
+      { title: "CSS Essential Training", date: "Oct 07, 2026" },
+      { title: "JavaScript Essential Training", date: "Oct 07, 2026" },
+      { title: "HTML Essential Training", date: "Oct 04, 2026" },
+      { title: "Search Techniques for Web Developers", date: "Oct 15, 2026" },
+      { title: "Learning ECMAScript 6+ (ES6+)", date: "Nov 07, 2020" },
+      { title: "Git Essential Training", date: "Oct 09, 2026" },
+      { title: "React Essential Training", date: "Oct 08, 2026" },
+      { title: "Node.js Essential Training", date: "Oct 15, 2026" },
+      { title: "SQL Essential Training", date: "Oct 15, 2026" },
+      { title: "NoSQL Essential Training", date: "Oct 11, 2026" },
+      { title: "Learning REST APIs", date: "Oct 13, 2026" },
+      { title: "DevOps Foundations", date: "Oct 02, 2026" },
+    ],
+    certificateUrl: "https://drive.google.com/file/d/1RpfW3g3BGU6q8ePfy03dgDIi9u6-FXEM/view?usp=drive_link",
+    linkedinUrl: "https://www.linkedin.com/learning/certificates/08593a99aa551483782c589b7b8c3c40d179b34879bc571bd408930c20329821?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BG8hQvrhHQY6wG5%2F4nBWWSw%3D%3D",
+  },
+  {
     title: "Become a React Developer",
     provider: "LinkedIn Learning",
     date: "Feb 18, 2021",
