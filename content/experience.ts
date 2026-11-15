@@ -29,7 +29,7 @@ export const experience: Experience[] = [
     ],
   },
   {
-    company: "PLDT Canlubang",
+    company: "PLDT",
     companyNote: "On-the-job training",
     role: "MDF (Main Distribution Frame) Assistant",
     period: "Jun 2017 – Sep 2017",
