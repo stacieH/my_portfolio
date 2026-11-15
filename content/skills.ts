@@ -19,7 +19,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: "Backend",
-    items: ["Node.js", "Express.js", "MySQL", "PHP"],
+    items: ["NestJS", "nodemon", "Node.js", "Express.js", "MySQL", "PHP"],
   },
   {
     title: "Testing",
