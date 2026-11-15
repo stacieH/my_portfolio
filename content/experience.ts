@@ -24,8 +24,8 @@ export const experience: Experience[] = [
       "Collaborated with backend and UI/UX teams, analyzed requirements, integrated frontend functionality, and resolved technical issues.",
       "Ensured UI/UX technical feasibility, validated user input before submission to backend services.",
       "Contributed to UI mockups, and prototype using Figma.",
-      "Reviewed and Contributed to User Manual Documentation.",
-      "Contribute for Performing Manual Testing by following the procedures.",
+      "Reviewed and contributed to User Manual Documentation.",
+      "Contributed to performing Manual Testing by following the procedures.",
     ],
   },
   {
@@ -46,7 +46,7 @@ export const experience: Experience[] = [
     period: "Aug 2016 – Nov 2016",
     bullets: [
       "Encoded certificate details into spreadsheets.",
-      "Organized certification documents and lists in alphabetical order.",
+      "Organized certification documents and lists in alphabetical/year order.",
     ],
   },
 ];
