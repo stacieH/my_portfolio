@@ -5,7 +5,7 @@ export const profile: Profile = {
   shortName: "Harlene Jaramillos",
   title: "Front-End Developer | FE Team Lead | Software Engineer",
   summary:
-    "Front-End Developer and Team Lead with 7+ years of IT experience building scalable web and mobile applications. Experienced with Next.js, React, React Native, Redux, TypeScript, JavaScript, and Material UI.",
+    "Front-End Developer and Team Lead with 7+ years of IT experience building scalable web and mobile applications. Leads front-end teams, builds reusable components and shared packages, integrates APIs and payment functionality, and raises code quality through code reviews and coding standards. Uses AI-assisted development tools (Claude Code, GitHub Copilot) for planning, code generation, debugging, issue resolution, and documentations.",
   location: "Calamba City, Laguna, Philippines",
   photo: {
     src: "/profile.jpg",
