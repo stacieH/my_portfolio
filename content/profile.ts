@@ -3,7 +3,7 @@ import type { Profile } from "./types";
 export const profile: Profile = {
   name: "Harlene T. Jaramillos",
   shortName: "Harlene Jaramillos",
-  title: "Front-End Developer | FE Team Lead | Software Engineer",
+  title: "Front-End Developer | FE Team Lead | Software Developer",
   summary:
     "Front-End Developer and Team Lead with 7+ years of IT experience building scalable web and mobile applications. Leads front-end teams, builds reusable components and shared packages, integrates APIs and payment functionality, and raises code quality through code reviews and coding standards. Uses AI-assisted tools (Claude Code, GitHub Copilot) for planning, documentation, code generation, debugging, and issue resolution to broader Fullstack development capabilities.",
   location: "Calamba City, Laguna, Philippines",
