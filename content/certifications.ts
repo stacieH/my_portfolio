@@ -137,21 +137,6 @@ export const courses: Course[] = [
    certificateUrl: "https://drive.google.com/file/d/1zAda3sLmLzsspT2Wpu0sG95ytap-zz40/view?usp=drive_link"
  },
  { 
-   title: "Building RESTful APIs with Node.js and Express", 
-   date: "Nov 08, 2021",
-   certificateUrl: ""
- },
-  { 
-    title: "React: Using TypeScript", 
-    date: "Oct 16, 2021",
-    certificateUrl: ""
-  },
-  { 
-    title: "React: Testing and Debugging", 
-    date: "Oct 14, 2021",
-    certificateUrl: ""
-  },
- { 
    title: "Explore React.js Development", 
    date: "Feb 18, 2021",
    certificateUrl: "https://drive.google.com/file/d/1gK1LYwhnY31gAlv9odz8uMmfjqRJOGD0/view?usp=drive_link"
