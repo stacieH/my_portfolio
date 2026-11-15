@@ -22,7 +22,10 @@ export const experience: Experience[] = [
     bullets: [
       "Designed and developed ReactJS web applications and reusable components while following coding standards and clean-code practices.",
       "Collaborated with backend and UI/UX teams, analyzed requirements, integrated frontend functionality, and resolved technical issues.",
-      "Ensured UI/UX technical feasibility, validated user input, and contributed to Figma mockups, prototypes, documentation, and testing.",
+      "Ensured UI/UX technical feasibility, validated user input before submission to backend services.",
+      "Contributed to UI mockups, and prototype using Figma.",
+      "Reviewed and Contributed to User Manual Documentation.",
+      "Contribute for Performing Manual Testing by following the procedures.",
     ],
   },
   {
