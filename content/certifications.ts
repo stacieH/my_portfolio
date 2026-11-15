@@ -43,6 +43,7 @@ export const learningPaths: LearningPath[] = [
       { title: "React Native Ecosystem and Workflow", date: "Nov 03, 2020" },
       { title: "Learning React Native", date: "Oct 18, 2020" },
     ],
+    certificateUrl: "https://drive.google.com/file/d/1_3nZNXAQvYnO420x00I0Dkpap9jmesm7/view?usp=drive_link",
   },
 ];
 
@@ -196,6 +197,41 @@ export const courses: Course[] = [
     certificateUrl: "https://drive.google.com/file/d/1XLu9uwXvi42usCQQSqc35DfUPVtoaW8K/view?usp=drive_link" 
   },
   { 
+    title: "How to Organize Your Time and Your Life", 
+    date: "Jan 19, 2021",
+    certificateUrl: "https://drive.google.com/file/d/1od_QJ34CDu1vvzewY2-3MQiO8N4C5fc-/view?usp=drive_link" 
+  },
+  { 
+    title: "How to Crush Self-Doubt and Build Self-Confidence", 
+    date: "Jan 19, 2021",
+    certificateUrl: "https://drive.google.com/file/d/1DS0IrnnuZ6uzJIffJgPVEWL5hhUFXnkx/view?usp=drive_link" 
+  },
+  { 
+    title: "Programming Foundations: Fundamentals", 
+    date: "Jan 10, 2021",
+    certificateUrl: "https://drive.google.com/file/d/1TpZvZS1S3m6iiUGLbEPYP8zl5vujcDrC/view?usp=drive_link" 
+  },
+  { 
+    title: "Succeeding in Web Development: Full Stack and Front End", 
+    date: "Dec 18, 2020",
+    certificateUrl: "https://drive.google.com/file/d/1l0-zJeXbE6vivNasF2y5rHYxGIWFXiat/view?usp=drive_link" 
+  },
+  { 
+    title: "How to Work Smarter, Not Harder: Save Time and Money and Increase Productivity", 
+    date: "Nov 08, 2020",
+    certificateUrl: "https://drive.google.com/file/d/1GSaA7LsEuOCBW3d3heEg1SjisYAIbhXw/view?usp=drive_link" 
+  },
+  { 
+    title: "Self-Compassion: The Proven Power of Being Kind to Yourself (Blinkist Summary)", 
+    date: "Nov 08, 2020",
+    certificateUrl: "https://drive.google.com/file/d/18Tl5WC9YEvPUMMVaiNYRURc5BiEeyg5j/view?usp=drive_link" 
+  },
+  { 
+    title: "Introduction to Graphic Design", 
+    date: "Nov 07, 2020",
+    certificateUrl: "https://drive.google.com/file/d/1XWLstl9FZH-LLyjeisWsb9UC-NLvFWn9/view?usp=drive_link" 
+  },
+  { 
     title: "Learning ECMAScript 6+", 
     date: "Nov 07, 2020",
     certificateUrl: "https://drive.google.com/file/d/1PvgqD6FuFFiYEdGWjrzmd2MAF4jmsSz1/view?usp=drive_link" 
@@ -206,9 +242,34 @@ export const courses: Course[] = [
     certificateUrl: "https://drive.google.com/file/d/1JRza_yrhep5gKu42y1zPHDBTDYqow3LQ/view?usp=drive_link"  
   },
   { 
+    title: "Node.js Essential Training (2019)", 
+    date: "Nov 04, 2020",
+    certificateUrl: "https://drive.google.com/file/d/1MpLUZUtv5-gav306bCphGsp1YDgzKWex/view?usp=drive_link"  
+  },
+  { 
+    title: "Learning React VR", 
+    date: "Nov 04, 2020",
+    certificateUrl: "https://drive.google.com/file/d/10l9JY7BCc1SEfVIzqouK4-e1qoGKKAaN/view?usp=drive_link"  
+  },
+  { 
     title: "React: Securing Applications", 
     date: "Nov 04, 2020",
     certificateUrl: "https://drive.google.com/file/d/1_6pCdb882wWi4X-tcTF5-cJliiYnclcS/view?usp=drive_link"  
+  },
+  { 
+    title: "Asking for Feedback as an Employee", 
+    date: "Nov 03, 2020",
+    certificateUrl: "https://drive.google.com/file/d/15cSWY3e9MpueambIkqOQ5ZQ4NeoLIcMQ/view?usp=drive_link"  
+  },
+  { 
+    title: "Design Thinking: Understanding the Process", 
+    date: "Nov 02, 2020",
+    certificateUrl: "https://drive.google.com/file/d/1TYYjsXBUTBQjbxFE283RKcdpESOAKgMS/view?usp=drive_link"  
+  },
+  { 
+    title: "SEO for Social Media", 
+    date: "Nov 02, 2020",
+    certificateUrl: "https://drive.google.com/file/d/19AojGZJkrlxL2JEUSEa3LcGd6Mw80bwh/view?usp=drive_link"  
   },
   { 
     title: "Learning webpack 4", 
@@ -228,11 +289,21 @@ export const courses: Course[] = [
   { 
     title: "Webpack for React Applications", 
     date: "Oct 12, 2020",
-    certificateUrl: "" 
+    certificateUrl: "https://drive.google.com/file/d/1xlZUQQUXnUgWIE_ttROTOX659H-czcNk/view?usp=drive_link" 
+  },
+  { 
+    title: "Stop Stressing and Keep Moving Forward", 
+    date: "Oct 12, 2020",
+    certificateUrl: "https://drive.google.com/file/d/1OZktD0q2A7vtGoscmJ6yARhnge39STt1/view?usp=drive_link" 
   },
   { 
     title: "Succeeding in a New Job", 
     date: "Oct 09, 2020",
     certificateUrl: "https://drive.google.com/file/d/1l9TZPcecsL0epAhmAiRRa2TdqeNVbqko/view?usp=drive_link" 
+  },
+  { 
+    title: "The Six Morning Habits of High Performers", 
+    date: "Sep 23, 2020",
+    certificateUrl: "" 
   },
 ];
