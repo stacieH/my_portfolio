@@ -45,8 +45,9 @@ export const experience: Experience[] = [
     role: "Data Encoder",
     period: "Aug 2016 – Nov 2016",
     bullets: [
-      "Encoded certificate details into spreadsheets.",
-      "Organized certification documents and lists in alphabetical/year order.",
+      "Encodes and updates records of trainee’s information.",
+      "Organized documents and lists in order.",
+      "Provided assistance in the preparation of MIS report",
     ],
   },
 ];
