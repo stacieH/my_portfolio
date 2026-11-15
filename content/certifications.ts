@@ -134,7 +134,7 @@ export const courses: Course[] = [
  { 
    title: "How to Train Your Brain for Maximum Growth", 
    date: "Jan 16, 2022",
-   certificateUrl: ""
+   certificateUrl: "https://drive.google.com/file/d/1zAda3sLmLzsspT2Wpu0sG95ytap-zz40/view?usp=drive_link"
  },
  { 
    title: "Building RESTful APIs with Node.js and Express", 
@@ -192,11 +192,6 @@ export const courses: Course[] = [
     certificateUrl: "https://drive.google.com/file/d/1qy4noorffZoGejEPIOa_Mqsqz7MqBMpv/view?usp=drive_link" 
   },
   { 
-    title: "Building RESTful APIs with Node.js and Express (2019)", 
-    date: "Feb 08, 2021",
-    certificateUrl: "https://drive.google.com/file/d/1XLu9uwXvi42usCQQSqc35DfUPVtoaW8K/view?usp=drive_link" 
-  },
-  { 
     title: "How to Organize Your Time and Your Life", 
     date: "Jan 19, 2021",
     certificateUrl: "https://drive.google.com/file/d/1od_QJ34CDu1vvzewY2-3MQiO8N4C5fc-/view?usp=drive_link" 
@@ -225,6 +220,11 @@ export const courses: Course[] = [
     title: "Self-Compassion: The Proven Power of Being Kind to Yourself (Blinkist Summary)", 
     date: "Nov 08, 2020",
     certificateUrl: "https://drive.google.com/file/d/18Tl5WC9YEvPUMMVaiNYRURc5BiEeyg5j/view?usp=drive_link" 
+  },
+  { 
+    title: "Building RESTful APIs with Node.js and Express (2019)", 
+    date: "Nov 08, 2020",
+    certificateUrl: "https://drive.google.com/file/d/1XLu9uwXvi42usCQQSqc35DfUPVtoaW8K/view?usp=drive_link" 
   },
   { 
     title: "Introduction to Graphic Design", 
