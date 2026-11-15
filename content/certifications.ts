@@ -109,12 +109,32 @@ export const courses: Course[] = [
    certificateUrl: "https://drive.google.com/file/d/1lZ5vmNocArOiEHxwrNhvlipxQ1-vCEcc/view?usp=drive_link"
  },
   { 
+    title: "Creating a Collaborative Culture", 
+    date: "Dec 26, 2023", 
+    certificateUrl:"https://drive.google.com/file/d/1HKhY21OSuxRTWcLkbc_wnBi7oGRq53EJ/view?usp=drive_link",
+  },
+  { 
     title: "Learning Redux Toolkit", 
     date: "Feb 15, 2023", 
     certificateUrl:"https://drive.google.com/file/d/1Q7YgsJspDJ2hmiuTJdNjClumUFqE-xQ7/view?usp=drive_link",
     linkedinUrl:
     "https://www.linkedin.com/learning/certificates/984aefe713abbf5e295f8ac8b67692cca5c1312d621d669a5a353167bd68fe03"
   },
+ { 
+   title: "React: Server-Side Rendering", 
+   date: "Feb 10, 2022",
+   certificateUrl: "https://drive.google.com/file/d/1M68ov1J7b8PmbqxuHNO8HwN4TL166QbB/view?usp=drive_link"
+ },
+ { 
+   title: "React: Design Patterns (2021)", 
+   date: "Feb 02, 2022",
+   certificateUrl: ""
+ },
+ { 
+   title: "How to Train Your Brain for Maximum Growth", 
+   date: "Jan 16, 2022",
+   certificateUrl: ""
+ },
  { 
    title: "Building RESTful APIs with Node.js and Express", 
    date: "Nov 08, 2021",
@@ -133,35 +153,86 @@ export const courses: Course[] = [
  { 
    title: "Explore React.js Development", 
    date: "Feb 18, 2021",
-   certificateUrl: ""
+   certificateUrl: "https://drive.google.com/file/d/1gK1LYwhnY31gAlv9odz8uMmfjqRJOGD0/view?usp=drive_link"
  },
   { 
     title: "Learning GitHub", 
     date: "Feb 15, 2021",
-    certificateUrl: ""
+    certificateUrl: "https://drive.google.com/file/d/1uP1d2kqk21v2MUOd3e3zHHdnmz1ZcChG/view?usp=drive_link"
+  },
+  { 
+    title: "Web Programming Foundations", 
+    date: "Feb 14, 2021",
+    certificateUrl: "https://drive.google.com/file/d/1lmdKdTXx4F6GSaaY0OfINbtw2pvI2Kg_/view?usp=drive_link"
+  },
+  { 
+    title: "Overcoming Procrastination", 
+    date: "Feb 09, 2021",
+    certificateUrl: "https://drive.google.com/file/d/1XhviZFvOvUquH2yURf2afS4qMoZEKO6z/view?usp=drive_link" 
+  },
+  { 
+    title: "Developing Resourcefulness", 
+    date: "Feb 09, 2021",
+    certificateUrl: "https://drive.google.com/file/d/1Gc8L5Vzt2sFOon7dRMwyOWtXRVkjjcDQ/view?usp=drive_link" 
+  },
+  { 
+    title: "Building Resilience (2014)", 
+    date: "Feb 09, 2021",
+    certificateUrl: "https://drive.google.com/file/d/11Dc2xlxrP-QJDOcKKHy7OtzYGxej10XK/view?usp=drive_link" 
   },
   { 
     title: "Learning Java", 
     date: "Feb 09, 2021",
-    certificateUrl: "" 
+    certificateUrl: "https://drive.google.com/file/d/1gXsXA3ogNT1chVX48E-iMLHsXmIHHCQl/view?usp=drive_link" 
   },
   { 
     title: "Learning React.js", 
     date: "Feb 09, 2021",
-    certificateUrl: "" 
+    certificateUrl: "https://drive.google.com/file/d/1qy4noorffZoGejEPIOa_Mqsqz7MqBMpv/view?usp=drive_link" 
+  },
+  { 
+    title: "Building RESTful APIs with Node.js and Express (2019)", 
+    date: "Feb 08, 2021",
+    certificateUrl: "https://drive.google.com/file/d/1XLu9uwXvi42usCQQSqc35DfUPVtoaW8K/view?usp=drive_link" 
   },
   { 
     title: "Learning ECMAScript 6+", 
     date: "Nov 07, 2020",
-    certificateUrl: "" 
+    certificateUrl: "https://drive.google.com/file/d/1PvgqD6FuFFiYEdGWjrzmd2MAF4jmsSz1/view?usp=drive_link" 
+  },
+  { 
+    title: "Create a CRM Mobile Application with React Native (2019)", 
+    date: "Nov 04, 2020",
+    certificateUrl: "https://drive.google.com/file/d/1JRza_yrhep5gKu42y1zPHDBTDYqow3LQ/view?usp=drive_link"  
+  },
+  { 
+    title: "React: Securing Applications", 
+    date: "Nov 04, 2020",
+    certificateUrl: "https://drive.google.com/file/d/1_6pCdb882wWi4X-tcTF5-cJliiYnclcS/view?usp=drive_link"  
   },
   { 
     title: "Learning webpack 4", 
     date: "Nov 01, 2020",
-    certificateUrl: ""  },
+    certificateUrl: "https://drive.google.com/file/d/1773iLQCD6CW3yL9fUKSC5E8Mgm2BsQEs/view?usp=drive_link"  
+  },
+  { 
+    title: "React: Using TypeScript (2019)", 
+    date: "Oct 16, 2020",
+    certificateUrl: "https://drive.google.com/file/d/1JveMmCYOxkWm4CDVCLopWpD20XuFIyoH/view?usp=drive_link" 
+  },
+  { 
+    title: "React: Testing and Debugging", 
+    date: "Oct 14, 2020",
+    certificateUrl: "https://drive.google.com/file/d/1-qOEHWSlbxOoyGwIYsp7f6e4c0_s-8Jl/view?usp=drive_link" 
+  },
   { 
     title: "Webpack for React Applications", 
     date: "Oct 12, 2020",
     certificateUrl: "" 
+  },
+  { 
+    title: "Succeeding in a New Job", 
+    date: "Oct 09, 2020",
+    certificateUrl: "https://drive.google.com/file/d/1l9TZPcecsL0epAhmAiRRa2TdqeNVbqko/view?usp=drive_link" 
   },
 ];
